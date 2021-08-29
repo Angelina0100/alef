@@ -1,0 +1,46 @@
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+};
+
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin tablet-sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin btn-buy($for-sale: true) {
+  @if $for-sale {
+    background-color: $blue;
+    transition: background-color .3s ease-in-out, letter-spacing .3s ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: darken($blue, 20%);
+      letter-spacing: 1px;
+    }
+  } @else {
+    background-color: $dark-grey;
+  }
+}
+

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.min.css">
+    <title>T-TASK</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <button type="button" class="header__burger" aria-label="Выпадающее меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header__logo header-logo">
+                <a href="#" class="header-logo__link">
+                    <picture>
+                        <source media="(max-width:576px)" srcset="images/dest/logo-mob.svg">
+                        <img src="images/dest/logo.svg" alt="Логотип компании - два белых зигзага">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="header__menu">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#">Main</a></li>
+                        <li class="header__item"><a href="#">Gallery</a></li>
+                        <li class="header__item"><a href="#">News</a></li>
+                        <li class="header__item"><a href="#">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__contacts">
+                <a class="header__tel" href="tel:+544349000000">+544 3490 00000</a>
+                <p class="header__remark">Звони скорее!</p>
+            </div>
+
+            <h1 class="header__heading">Найдено <span>349</span> котов</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="sort">
+                <p class="sort__text">Сортировать по:</p>
+
+                <button type="button" class="sort__btn sort__price" name="price" id="price-btn">Цене</button>
+
+                <button type="button" class="sort__btn sort__age" name="price" id="age-btn">Возрасту</button>
+            </div>
+
+            <ul class="cats__list">
+                <li class="cats__item">
+                    <article class="cats__article">
+                        <div class="cats__picture">
+                            <picture>
+                                <source srcset="images/dest/cat1_1x.webp 1x, images/dest/cat1_2x.webp 2x" type="image/webp">
+                                <img src="images/dest/cat1_1x.jpg" srcset="images/dest/cat1_1x 1x, images/dest/cat1_2x.jpg 2x" alt="Кот полосатый в лежанке смотрит на вас">
+                            </picture>
+
+                            <span class="cats__discount">-40%</span>
+
+                            <button type="button" class="cats__like" aria-label="Поставить лайк"></button>
+                        </div>
+
+                        <div class="cats__description cats-description">
+                            <h2 class="cats-description__name">Кот полосатый</h2>
+
+                            <ul class="cats-description__list">
+                                <li class="cats-description__item">
+                                    Коричневый окрас
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>2&nbsp;мес.</span>возраст
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>4</span>Кол-во лап
+                                </li>
+                            </ul>
+
+                            <p class="cats-description__price"><span>30 000</span> руб.</p>
+                        </div>
+                        <button type="button" class="cats__btn btn-buy">Купить</button>
+                    </article>
+                </li>
+
+                <li class="cats__item">
+                    <article class="cats__article">
+                        <div class="cats__picture">
+                            <picture>
+                                <source srcset="images/dest/cat2_1x.webp 1x, images/dest/cat2_2x.webp 2x" type="image/webp">
+                                <img src="images/dest/cat2_1x.jpg" srcset="images/dest/cat2_1x 1x, images/dest/cat1_2x.jpg 2x" alt="Кот полосатый дежит на полу и смотрит в сторону">
+                            </picture>
+
+                            <button type="button" class="cats__like" aria-label="Поставить лайк" disabled></button>
+                        </div>
+
+                        <div class="cats__description cats-description">
+                            <h2 class="cats-description__name">Кот полосатый</h2>
+
+                            <ul class="cats-description__list">
+                                <li class="cats-description__item">
+                                    Коричневый окрас
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>2&nbsp;мес.</span>возраст
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>4</span>Кол-во лап
+                                </li>
+                            </ul>
+
+                            <p class="cats-description__price"><span>30 000</span> руб.</p>
+                        </div>
+
+                        <button type="button" class="cats__btn btn-sold" disabled>Продан</button>
+                    </article>
+                </li>
+
+                <li class="cats__item">
+                    <article class="cats__article">
+                        <div class="cats__picture">
+                            <picture>
+                                <source srcset="images/dest/cat3_1x.webp 1x, images/dest/cat3_2x.webp 2x" type="image/webp">
+                                <img src="images/dest/cat3_1x.jpg" srcset="images/dest/cat3_1x 1x, images/dest/cat3_2x.jpg 2x" alt="Довольный дымчатый кот сидит в лучах солца">
+                            </picture>
+
+                            <button type="button" class="cats__like" aria-label="Поставить лайк"></button>
+                        </div>
+
+                        <div class="cats__description cats-description">
+                            <h2 class="cats-description__name">Кот полосатый</h2>
+
+                            <ul class="cats-description__list">
+                                <li class="cats-description__item">
+                                    Коричневый окрас
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>2&nbsp;мес.</span>возраст
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>4</span>Кол-во лап
+                                </li>
+                            </ul>
+
+                            <p class="cats-description__price"><span>30 000</span> руб.</p>
+                        </div>
+
+                        <button type="button" class="cats__btn btn-buy">Купить</button>
+                    </article>
+                </li>
+
+                <li class="cats__item">
+                    <article class="cats__article">
+                        <div class="cats__picture">
+                            <picture>
+                                <source srcset="images/dest/cat1_1x.webp 1x, images/dest/cat1_2x.webp 2x" type="image/webp">
+                                <img src="images/dest/cat1_1x.jpg" srcset="images/dest/cat1_1x 1x, images/dest/cat1_2x.jpg 2x" alt="Кот полосатый в лежанке смотрит на вас">
+                            </picture>
+
+                            <button type="button" class="cats__like" aria-label="Поставить лайк"></button>
+                        </div>
+
+                        <div class="cats__description cats-description">
+                            <h2 class="cats-description__name">Кот полосатый</h2>
+
+                            <ul class="cats-description__list">
+                                <li class="cats-description__item">
+                                    Коричневый окрас
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>2&nbsp;мес.</span>возраст
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>4</span>Кол-во лап
+                                </li>
+                            </ul>
+
+                            <p class="cats-description__price"><span>30 000</span> руб.</p>
+                        </div>
+
+                        <button type="button" class="cats__btn btn-buy">Купить</button>
+                    </article>
+                </li>
+
+                <li class="cats__item">
+                    <article class="cats__article">
+                        <div class="cats__picture">
+                            <picture>
+                                <source srcset="images/dest/cat3_1x.webp 1x, images/dest/cat3_2x.webp 2x" type="image/webp">
+                                <img src="images/dest/cat3_1x.jpg" srcset="images/dest/cat3_1x 1x, images/dest/cat3_2x.jpg 2x" alt="Довольный дымчатый кот сидит в лучах солца">
+                            </picture>
+
+                            <span class="cats__discount">-40%</span>
+
+                            <button type="button" class="cats__like" aria-label="Поставить лайк"></button>
+                        </div>
+
+                        <div class="cats__description cats-description">
+                            <h2 class="cats-description__name">Кот полосатый</h2>
+
+                            <ul class="cats-description__list">
+                                <li class="cats-description__item">
+                                    Коричневый окрас
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>2&nbsp;мес.</span>возраст
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>4</span>Кол-во лап
+                                </li>
+                            </ul>
+
+                            <p class="cats-description__price"><span>30 000</span> руб.</p>
+                        </div>
+
+                        <button type="button" class="cats__btn btn-buy">Купить</button>
+                    </article>
+                </li>
+
+                <li class="cats__item">
+                    <article class="cats__article">
+                        <div class="cats__picture">
+                            <picture>
+                                <source srcset="images/dest/cat2_1x.webp 1x, images/dest/cat2_2x.webp 2x" type="image/webp">
+                                <img src="images/dest/cat2_1x.jpg" srcset="images/dest/cat2_1x 1x, images/dest/cat1_2x.jpg 2x" alt="Кот полосатый дежит на полу и смотрит в сторону">
+                            </picture>
+
+                            <button type="button" class="cats__like" aria-label="Поставить лайк" disabled></button>
+                        </div>
+
+                        <div class="cats__description cats-description">
+                            <h2 class="cats-description__name">Кот полосатый</h2>
+
+                            <ul class="cats-description__list">
+                                <li class="cats-description__item">
+                                    Коричневый окрас
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>2&nbsp;мес.</span>возраст
+                                </li>
+
+                                <li class="cats-description__item">
+                                    <span>4</span>Кол-во лап
+                                </li>
+                            </ul>
+
+                            <p class="cats-description__price"><span>30 000</span> руб.</p>
+                        </div>
+
+                        <button type="button" class="cats__btn btn-sold" disabled>Продан</button>
+                    </article>
+                </li>
+            </ul>
+
+            <button type="button" class="btn__show">Показать еще 20</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__subscription">
+                <form id="subscription-form" class="footer__form footer-form" method="POST"
+                      action="https://jsonplaceholder.typicode.com/posts">
+                        <h3 class="footer-form__heading">Успей купить!
+                            <span class="footer-form__description">Подпишись и&nbsp;успей словить все акции</span>
+                        </h3>
+
+                        <label class="footer-form__label">
+                            <span class="visually-hidden">Поле ввода email</span>
+                            <input name="email" type="email" class="footer-form__input input--text" placeholder="E-mail" data-validate-field="email">
+                        </label>
+
+                        <button type="submit" class="footer-form__btn cta-link link-bg">Подписаться</button>
+
+                        <label class="footer-form__label">
+                            <input id="accept-checkbox" type="checkbox" class="footer-form__checkbox">Подписаться на&nbsp;новости
+                            <span></span>
+                        </label>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <div class="wrapper up-button__wrapper">
+        <div class="up-button__container">
+            <button class="up-button" type="button">
+                <span class="visually-hidden">Наверх</span>
+            </button>
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
